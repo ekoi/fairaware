@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fairaware-service"
+version = "0.1.0"
+description = ""
+authors = ["ekoi <eko.indarto@dans.knaw.nl>"]
+readme = "README.md"
+include = ["resources/*", "logs/*"]
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+uvicorn = "^0.29.0"
+dynaconf = "^3.2.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,12 @@
+[default]
+service_name = "fairaware-service"
+#FastAPI
+fastapi_title = "FAIRaware Service"
+fastapi_description = "FAIRaware"
+
+repositories_conf_dir = "@format {env[BASE_DIR]}/resources"
+
+log_file = "@format {env[BASE_DIR]}/logs/fas.log"
+#log_file = "../logs/dsg.log"
+log_level = 10
+log_format = "%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s"
