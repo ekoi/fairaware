@@ -12,3 +12,4 @@ data = {}
 
 
 __version__ = importlib.metadata.metadata(settings.SERVICE_NAME)["version"]
+data.update({"service-version": __version__})
